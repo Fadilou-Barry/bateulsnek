@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>My Anaconda don't !</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<style>
+#airDeJeu {
+  display: none;
+}
+.bg {
+  
+  background: url(/Users/fadiloubarry/Desktop/BateulSnek/client/battlingsnek.jpg);
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+ background-color: rgb(11, 156, 11);
+ border-radius: 5px;
+ color: white;
+}
+</style>
+</head>
+<body class="bg">
+  <section class="vh-100">
+    <div class="container h-100">
+
+      <div id="fenetreAcceuil" class="h-100">
+        <div class="d-flex flex-column align-items-center justify-content-center h-100">
+            <h1>Bateul Snek</h1>
+            <button
+              type="submit"
+              class="btn btn-success"
+              id="btnNouvellePartie"
+            >
+              Nouvelle partie
+            </button>
+            <div>OU</div>
+            <div class="form-group">
+              <input type="text" placeholder="Saisissez votre Code" id="sasieCodePartie"/>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-success"
+              id="btnRejoindreUnePartie"
+            >
+              Rejoindre Une Partie
+            </button>
+        </div>
+      </div>
+
+      <div id="airDeJeu" class="h-100">
+        <div class="d-flex flex-column align-items-center justify-content-center h-100">
+
+          <h1> Voici le code de votre partie : <span id="codePartieEst"></span></h1>
+
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js></script>
+  <script src="index.js"></script>
+</body>~
+</html>
